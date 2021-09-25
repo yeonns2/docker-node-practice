@@ -1,3 +1,8 @@
+# Docker
+
+
+![Untitled](https://user-images.githubusercontent.com/46320067/134761745-1f234385-3078-45fc-b84e-c1761f17d7f1.png)
+
 
 
 # 도커란?
@@ -21,11 +26,9 @@
 - 서버 컴퓨터 또한 쉽게 내 개발 환경과 같은 환경으로 만들 수 있다.
 - 서버를 옮기거나 늘릴 때 도커를 사용하면 이미지만을 가져와 새로운 서버에 컨테이너를 만들어 쉽게 동일한 환경을 구축할 수 있다.
 
-</br>
+## 2. 자원적, 성능적으로 뛰어나다.!
 
-## 2. 자원적, 성능적으로 뛰어나다.
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6d1b61bf-11e4-4bf5-aaac-af18e8b86e77/Untitled.png)
+![Untitled 1](https://user-images.githubusercontent.com/46320067/134761763-5d738548-6614-4186-88d4-e8eda3f81187.png)
 
 ### 가상화 방식
 
@@ -37,11 +40,9 @@
 - 새롭게 커널 OS를 생성하지 않고 기존의 커널 OS 자원을 계승하여 사용
 - 각 환경마다 사용할 수 있는 자원이 고정으로 정해져 있지 않아 유동적
 
-</br>
-
 # 도커 아키텍처
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0b83f8ec-ec86-40a0-96ce-ed28bcac4b61/Untitled.png)
+![Untitled 2](https://user-images.githubusercontent.com/46320067/134761772-ae4f5577-0286-4b47-8b85-ae211c51c1aa.png)
 
 - `Docker`는 크게 `Client`와 `Server`로 나뉜다.
 - `Client`에서는 'CLI (Command Line Interface)' 혹은 'Docker API'를 통해 '데몬'과 소통한다.
@@ -51,7 +52,8 @@
 
 ## 도커 이미지
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/39bcc732-74de-4189-a06f-b624099c07ec/Untitled.png)
+![Untitled 3](https://user-images.githubusercontent.com/46320067/134761780-3f931c40-e14f-41bc-add9-ae44627c93c9.png)
+
 
 - 컨테이너 **실행에 필요한 파일과 설정값 등을 포함하고 있는것.**
 - 이미지는 컨테이너를 실행하기 위한 모든 정보를 가지고 있기 때문에 더이상 의존성 파일을 컴파일 하고 서버환경을 맞추기 위해 이것저것 설치할 필요가 없다!
@@ -62,7 +64,8 @@
 
 ## 도커 컨테이너
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/49d05db1-5da2-40ba-b0b8-322e9d6c9c53/Untitled.png)
+![Untitled 4](https://user-images.githubusercontent.com/46320067/134761785-05f70def-e698-4b71-a547-3a53fca94418.png)
+
 
 - 애플리케이션을 환경에 구애받지 않고 실행하는 기술
 - 애플리케이션 뿐만 아니라 애플리케이션을 실행하는데 필요한 모든 환경을 포함
@@ -71,9 +74,7 @@
 
 → 즉, 실행시키고 싶은 애플리케이션의 필요한 설정값들을 이미지로 만들어 관리한다. 그리고 컨테이너는 이러한 이미지를 실행시키는 가상화 공간이자 해당 이미지의 인스턴스인 것!
 
-
-
-</br>
+---
 
 - **📚 도커의 기본 명령어들**
 
@@ -195,15 +196,13 @@
     ```
 
     - 백그라운드에서 데몬으로 돌도록 하려면 *d* 옵션을 붙입니다
-    
-    
-</br>
 
 ## Node.js 에서의 도커라이징
 
 ### 0. 도커 설치 (생략)
 
-![스크린샷 2021-09-25 오전 11.06.36.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/f39262b1-cd71-4e77-9902-2c2a283d1087/스크린샷_2021-09-25_오전_11.06.36.png)
+
+<img width="283" alt="스크린샷_2021-09-25_오전_11 06 36" src="https://user-images.githubusercontent.com/46320067/134761820-1af13a96-4083-427a-a5c4-e0b60bd4341e.png">
 
 프로젝트 구조
 
@@ -247,7 +246,8 @@ console.log(`Running on http://${HOST}:${PORT}`);
 
 ### 2. Dockerfile 생성 (이미지 생성)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/fd8a9455-9c71-4d77-9aa1-7302e658d4e2/Untitled.png)
+
+![Untitled 5](https://user-images.githubusercontent.com/46320067/134761828-ec019bc3-8023-41b0-9f30-d4eb068a525c.png)
 
 - 어떤 이미지를 사용해서 빌드할 것인지 정의
 - 애플리케이션의 작업 디렉터리 설정
@@ -257,7 +257,7 @@ console.log(`Running on http://${HOST}:${PORT}`);
 
 ### 3. .dockerignore 생성
 
-![스크린샷 2021-09-25 오전 11.05.11.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1191a12b-b1c5-4533-a616-5bfb356ae800/스크린샷_2021-09-25_오전_11.05.11.png)
+<img width="328" alt="스크린샷_2021-09-25_오전_11 05 11" src="https://user-images.githubusercontent.com/46320067/134762037-737f727a-bab7-44ea-9b0c-6639098eaaa5.png">
 
 - Docker 이미지에 로컬 모듈과 디버깅 로그를 복사하는 것을 막아서 이미지 내에서 설치한 모듈을 덮어쓰지 않게 함.
 
@@ -266,12 +266,10 @@ console.log(`Running on http://${HOST}:${PORT}`);
 ```docker
 docker build . -t <your username>/<image name>
 ```
+![Untitled 6](https://user-images.githubusercontent.com/46320067/134762004-bd2f4dcf-c7bf-4211-ac19-806d3c9f4b05.png)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/43f4f53f-6138-48d3-8d77-68fe3d45df26/Untitled.png)
+![Untitled 2](https://user-images.githubusercontent.com/46320067/134761974-7f7a39aa-2739-4ed2-8f4b-84e8a44d37c1.png)
 
-![스크린샷 2021-09-25 오전 11.01.56.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/deb35dbf-b5e3-4e41-811e-5982b2158935/스크린샷_2021-09-25_오전_11.01.56.png)
-
-![스크린샷 2021-09-25 오전 11.02.36.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/76745790-d9d9-466e-9e3c-5acfc1ad378f/스크린샷_2021-09-25_오전_11.02.36.png)
 
 도커 허브에 이미지가 올라간 것을 확인할 수 있음. 
 
@@ -280,8 +278,10 @@ docker build . -t <your username>/<image name>
 ```docker
 docker run -p 49160:8080 -d <your username>/<image name>
 ```
+<img width="907" alt="스크린샷_2021-09-25_오후_2 12 49" src="https://user-images.githubusercontent.com/46320067/134761942-724a10b7-f235-4abd-b0c1-272efec05d91.png">
 
-![스크린샷 2021-09-25 오후 2.12.49.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0fe1e300-4d29-423c-9130-fa360aae8958/스크린샷_2021-09-25_오후_2.12.49.png)
+
+
 
 ### 6. 테스트
 
@@ -290,16 +290,17 @@ docker run -p 49160:8080 -d <your username>/<image name>
 ```docker
 $ docker ps
 ```
+<img width="1241" alt="스크린샷_2021-09-25_오후_2 13 31" src="https://user-images.githubusercontent.com/46320067/134761948-1f6b92f9-6b98-463d-8257-c6bc42def177.png">
 
-![스크린샷 2021-09-25 오후 2.13.31.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ac2e800d-b397-4c73-a963-d55a29657a57/스크린샷_2021-09-25_오후_2.13.31.png)
+
 
 Docker가 컨테이너 내의 `8080` 포트를 머신의 `49160` 포트로 매핑한 걸 확인.
 
-![스크린샷 2021-09-25 오전 11.00.36.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4d326452-9924-4e27-a8e3-82160358d1fb/스크린샷_2021-09-25_오전_11.00.36.png)
 
-![스크린샷 2021-09-25 오전 10.59.15.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/52a8cb5f-43dd-4859-a718-ff38e034cd82/스크린샷_2021-09-25_오전_10.59.15.png)
+<img width="712" alt="스크린샷_2021-09-25_오전_11 00 36" src="https://user-images.githubusercontent.com/46320067/134761903-5de49597-5db3-4cc0-b1a5-df0de6bef592.png">
 
-</br>
+
+
 ---
 
 ## 여러 이미지를 실행시킬 때는 ?
@@ -334,28 +335,26 @@ services:
     ports:
       - "8080:8080"
 ```
-</br>
 
 ## 도커가 주목받는 이유
 
-![스크린샷 2021-09-25 오전 11.31.50.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c0297c42-ee25-4960-a3ff-9ed0b29e330d/스크린샷_2021-09-25_오전_11.31.50.png)
+<img width="1274" alt="스크린샷_2021-09-25_오전_11 31 50" src="https://user-images.githubusercontent.com/46320067/134761846-015c2c00-64fa-4f4c-ab4a-dcce9dfb0984.png">
+
 
 ### 마이크로 서비스 아키텍처
 
 - 비즈니스 기능마다 서버를 분리
 - 분리된 서비스마다 다른 기술 적용 가능
 - 서비스가 분리되었기 때문에 개발속도 상승
+
 - 서비스 별 통신 방법이 어렵다.
 - 구축이 어렵다.
 
 → 마이크로 서비스 아키텍처의 **세분화된 서비스**와 **컨테이너의 확장성의 장점**이 맞물리면서 이런 컨테이너들을 쉽게 관리, 배포할 수 있는 Docker가 주목을 받기 시작
 
-</br>
 ## 결론
 
 도커를 사용하면 기존에 개발자들이 환경 설정으로부터 겪던 고충을 말끔히 해결시켜 준다! 
-
-</br>
 
 ---
 
